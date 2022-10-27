@@ -4,6 +4,8 @@ import tensorflow as tf
 from tensorflow import keras
 from numpy import asarray
 import matplotlib.pyplot as plt
+import pickle
+
 
 def load_image(img):
     # convert to array
@@ -32,7 +34,7 @@ def gen_graph(res2,limit = 100, mul = 1, msg = "Model"):
 
       limit = np.clip(limit, 1, 100)
 
-      limit_ratio = np.clip(100 / limit, 1, 10)    
+      limit_ratio = np.clip(100 / limit, 1, 10)
       font_size = int(12 * mul * limit_ratio)
       bar_width = .6
       figure_size = int(120 * mul), int(5 * mul * limit_ratio)
@@ -51,3 +53,8 @@ def gen_graph(res2,limit = 100, mul = 1, msg = "Model"):
 
       plt.grid(axis='y', color='gray', linestyle='--', linewidth=line_size, alpha=.6)
       plt.show()
+def unpickle(file):
+    import pickle
+    with open(file, 'rb') as fo:
+        dict = pickle.load(fo, encoding='latin1')
+    return dict
