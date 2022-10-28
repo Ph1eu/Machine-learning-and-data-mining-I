@@ -1,8 +1,8 @@
-l## ****Image Classification with CIFAR-100 dataset****
+## ****Image Classification with CIFAR-100 dataset****
 
 These notebooks is mid-term project for machine-learning-and-data-mining-I class.
 
-This project was done by group … :
+This project was done by group 16 :
 
 - BI11-090 Phạm Minh Hiếu
 - BI11-257 Lê Đình Thông
@@ -40,11 +40,11 @@ CIFAR-100 is a computer vision data set used for object recognition. This datase
 Of this total of 60,000 images, 50,000 are for training and 10,000 for testing. For this specific project, 10% of training images were removed to validate, leaving the data distribution as follows:
 <img src="./images/Image1.jpeg" />
 
-The purpose of this project is to recognize an image and predict which of the 100 CIFAR-100 classes it belongs to by mainly using Logistic Regression with Neural Net
+The purpose of this project is to recognize an image and predict which of the 100 CIFAR-100 classes it belongs to 
 
 The following model are used in this project
 
-- Logistic Regression (1 and 2 layer with neural net)
+- Logistic Regression Classifer (1 and 2 layer with neural net)
 - CNN (VGG)
 
 ## The Data Set
@@ -65,3 +65,5 @@ The dimension of a color image is 32x32 pixels and is made up of 3 channels (Red
 - History-report : Training History in csv format
 
 ## Results
+
+- Showed in Experiment-and-Result.ipynb
